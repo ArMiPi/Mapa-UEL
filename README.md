@@ -1,3 +1,3 @@
 # Mapa UEL
 
-Este é um projeto desenvolvido ao longo da disciplina de Engenharia de Software.
+O projeto Mapa UEL é um aplicativo que tem por objetivo auxiliar as pessoas da comunidade acadêmica da UEL a se localizarem dentro da universidade e obter informações sobre os diversos eventos relacionados à comunidade universitária. Para utilização do aplicativo será necessário um cadastro. Possuindo um cadastro, o usuário terá acesso a três telas, uma contendo um mapa da universidade indicando os centros (CCA, CCB, CCE...) e as salas desses respectivos centros, uma tela cotendo uma lista com todos os eventos atualmente cadastrados no aplicativo, dando ao usuário as opções de marcar um evento, tornando-o assim, disponível no mapa, uma opção de pesquisar por eventos e também uma opção de criar um evento e a última tela será o perfil do usuário, onde será apresentada uma foto, o email e o nome do usuário.
