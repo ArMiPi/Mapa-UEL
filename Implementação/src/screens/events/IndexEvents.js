@@ -26,7 +26,7 @@ export default class IndexEvents extends Component{
               events.map((item, index) => (
                 <View key={index} style={styles.eventsParent}>
                   <TouchableOpacity style={styles.events} onPress={() => this.props.navigation.navigate("Event", { event: item })}>
-                    <Image source={EventImage} style={{width: 50, height: 50}}/>
+                    <Image source={EventImage} style={{width: 50, height: 50, marginTop: 8}}/>
                     <View style={{flexShrink: 1}}>
                       <Text style={styles.eventTitle}>{item.name}</Text>
                       <Text style={styles.eventSubTitle}>{item.description}</Text>

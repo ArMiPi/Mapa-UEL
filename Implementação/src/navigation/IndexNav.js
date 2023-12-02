@@ -13,12 +13,12 @@ const Tab = createBottomTabNavigator();
 export default function IndexNav(){
   return (
     <Tab.Navigator
-      screenOptions={{headerShown: false, tabBarActiveTintColor: "#42C83C", tabBarInactiveTintColor: "#737373", tabBarStyle: {backgroundColor: "#343434", height: 75},
+      screenOptions={{headerShown: false, tabBarActiveTintColor: "#42C83C", tabBarInactiveTintColor: "#737373", tabBarStyle: {backgroundColor: "#343434", height: 75, paddingTop: 10},
       tabBarLabelStyle: {fontSize: 15, fontWeight: "500", marginBottom: 10}}}
-      initialRouteName='Perfil' >
-      <Tab.Screen name="Eventos" component={EventsNav} options={{tabBarIcon: () => (<FontAwesome name="reorder" size={24} color="#737373" />)}}/>
-      <Tab.Screen name="Mapa" component={Maintence} options={{tabBarIcon: () => (<Entypo name="map" size={24} color="#737373" />)}}/>
-      <Tab.Screen name="Perfil" component={ProfileNav} options={{tabBarIcon: () => (<FontAwesome5 name="user-circle" size={25} color="#737373"/>)}}/>
+      initialRouteName='Eventos' >
+      <Tab.Screen name="Eventos" component={EventsNav} options={{tabBarIcon: ({color}) => (<FontAwesome name="reorder" size={24} color= {color}/>)}}/>
+      <Tab.Screen name="Mapa" component={Maintence} options={{tabBarIcon: ({color}) => (<Entypo name="map" size={24} color={color} />)}}/>
+      <Tab.Screen name="Perfil" component={ProfileNav} options={{tabBarIcon: ({color}) => (<FontAwesome5 name="user-circle" size={25} color={color}/>)}}/>
     </Tab.Navigator>
   );
 }
